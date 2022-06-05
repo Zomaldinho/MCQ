@@ -51,5 +51,7 @@ To get a local copy up and running follow these simple example steps.
    python manage.py migrate
    ```
 7. run the server using ```python manage.py runserver``` 
-8. Go to <a href='http://127.0.0.1:8000/swagger/'>Swagger Docs</a> to view all endpoints and try them as well.
+8. add Kafka topic to you local kafka environment using ```kafka-topics --bootstrap-server localhost:9092 --topic mcq --create```
+9. run Kafka consumer using ```python scoring/consumer.py ``` 
+10. Go to <a href='http://127.0.0.1:8000/swagger/'>Swagger Docs</a> to view all endpoints and try them as well.
 
